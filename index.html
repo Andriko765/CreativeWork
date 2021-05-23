@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Самостійна робота</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/OverlayScrollbars.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="#home" id="navbar_logo">Velo</a>
+
+            <div class="navbar_toogle" id="mobile_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </div>
+
+        <ul class="navbar_menu">
+            <li class="navbar_item"><a href="#home" class="navbar_links" id="home-page">Головна</a></li>
+            <li class="navbar_item"><a href="#about" class="navbar_links" id="hobbies-page">Про мене</a></li>
+
+
+            <li class="navbar_item">
+                <a href="#skills" class="navbar_links" id="skills-page">Велосипеди
+                <ul class="sub_menu">
+                    <li class="sub_menu_item">Specialized</li>
+                    <li class="sub_menu_item">Santa Cruz</li>
+                    <li class="sub_menu_item">YT Industries</li>
+                </ul>
+                </a>
+            </li>
+
+
+            <li class="navbar_item"><a href="#contacts" class="navbar_links" id="contact-page">Контакти</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="hero" id="home" >
+        <div class="hero_container" data-aos="fade-up">
+            <h1 class="hero_heading">
+                 <span>Top</span> downhill bikes
+            </h1>
+            <p class="hero_description">Unlimited Posibilities</p>
+            <button class="main_btn"><a href="">Explore</a></button>
+        </div>
+    </div>
+
+<div class="main" id="about"  >
+    <div class="main_container" >
+        <div class="main_img--container"  data-aos="zoom-in" >
+            <img class="main_img--card" src="img/IMG_20190621_212309.jpg" alt="">
+        </div>
+         <div class="main_content" data-aos="fade-in"  >
+             <h1>Семенчук Андрій</h1>
+             <h2>Web Designer & Developer</h2>
+             <button class="main_btn">
+                 <a href="">Завантажити резюме</a>
+             </button>
+         </div>
+
+    </div>
+    <div class="skill_title"  >
+        <h1>Мої навики</h1>
+    </div>
+    <div class="skill_container" >
+        <div class="progress-1">
+            <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                <circle class="progress-circle-back"
+                        cx="80" cy="80" r="50"></circle>
+                <circle class="progress-circle-prog_html"
+                        cx="80" cy="80" r="50" id="html"></circle>
+            </svg>
+            <div class="progress-text" data-progress="0">
+                <img class="html" src="img/free-icon-html5-1216733.png" alt="">
+            </div>
+        </div>
+
+        <div class="progress-2">
+            <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                <circle class="progress-circle-back"
+                        cx="80" cy="80" r="50"></circle>
+                <circle class="progress-circle-prog_css"
+                        cx="80" cy="80" r="50" id="css"></circle>
+            </svg>
+            <div class="progress-text" data-progress="0">
+                <img class="html" src="img/free-icon-css-3-732190.png" alt="">
+            </div>
+        </div>
+
+        <div class="progress-3">
+            <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                <circle class="progress-circle-back"
+                        cx="80" cy="80" r="50"></circle>
+                <circle class="progress-circle-prog_js"
+                        cx="80" cy="80" r="50" id="js"></circle>
+            </svg>
+            <div class="progress-text" data-progress="0">
+                <img class="html" src="img/file_type_js_official_icon_130509.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="form" id="contacts">
+    <div class="contacts_container">
+        <div class="container">
+        <form action="#">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Ім'я</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Прізвище</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Електронна пошта</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Номер телефону</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                    <textarea rows="8" cols="80" required></textarea>
+                    <br />
+                    <div class="underline"></div>
+                    <label for="">Звернення</label>
+                    <br />
+                    <div class="form-row submit-btn">
+                        <div class="input-data">
+                            <div class="inner"></div>
+                            <input type="submit" value="submit">
+                        </div>
+                    </div>
+        </form>
+        </div>
+    </div>
+    </div>
+    <div class="main_content">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.356206040059!2d24.012099815592244!3d49.83576417939527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7a31f0dccd%3A0x9869cc7025bc8e3f!2z0JvRjNCy0ZbQstGB0YzQutCwINC_0L7Qu9GW0YLQtdGF0L3RltC60LA!5e0!3m2!1suk!2sua!4v1621703579927!5m2!1suk!2sua" width="600" height="450" style="border:0; border-radius: 5px" allowfullscreen="" loading="lazy"></iframe>    </div>
+</div>
+</div>
+
+
+</body>
+<!--<script src="OverlayScrollbars.js"></script>-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true,
+            // offset: 120,
+            // delay: 1000,
+            // duration: 400,
+            // mirror: true,
+    }
+    );
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+
+</html>
