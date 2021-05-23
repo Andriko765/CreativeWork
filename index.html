@@ -11,33 +11,40 @@
 <body>
     <nav class="navbar">
         <div class="navbar_container">
-            <a href="#home" id="navbar_logo">Velo</a>
+                <a href="#home" id="navbar_logo">Velo</a>
 
-            <div class="navbar_toogle" id="mobile_menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <div class="navbar_toogle" id="mobile_menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
 
-            </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="#home" class="navbar_links" id="home-page">Головна</a>
+                    </li>
 
-        <ul class="navbar_menu">
-            <li class="navbar_item"><a href="#home" class="navbar_links" id="home-page">Головна</a></li>
-            <li class="navbar_item"><a href="#about" class="navbar_links" id="hobbies-page">Про мене</a></li>
 
+                    <li class="navbar_item" id="hover">
+                            <a href="#bikes" class="navbar_links" id="bikes-page">Велосипеди
+                                <ul class="sub_menu">
+                                    <li class="sub_menu_item"><a href="#bikes">Specialized</a></li>
+                                    <li class="sub_menu_item"><a href="#YT">YT Industries</a> </li>
+                                    <li class="sub_menu_item"><a href="#SC">Santa Cruz</a></li>
+                                </ul>
+                            </a>
+                    </li>
 
-            <li class="navbar_item">
-                <a href="#skills" class="navbar_links" id="skills-page">Велосипеди
-                <ul class="sub_menu">
-                    <li class="sub_menu_item">Specialized</li>
-                    <li class="sub_menu_item">Santa Cruz</li>
-                    <li class="sub_menu_item">YT Industries</li>
+                    <li class="navbar_item">
+                        <a href="#about" class="navbar_links" id="hobbies-page">Про мене</a>
+                    </li>
+                    
+                    <li class="navbar_item">
+                        <a href="#contacts" class="navbar_links" id="contact-page">Контакти</a>
+                    </li>
+
                 </ul>
-                </a>
-            </li>
 
-
-            <li class="navbar_item"><a href="#contacts" class="navbar_links" id="contact-page">Контакти</a></li>
-        </ul>
         </div>
     </nav>
 
@@ -47,9 +54,73 @@
                  <span>Top</span> downhill bikes
             </h1>
             <p class="hero_description">Unlimited Posibilities</p>
+
             <button class="main_btn"><a href="">Explore</a></button>
         </div>
     </div>
+
+
+
+    <div class="main" id="bikes" >
+        <div class="main_container" >
+            <div class="main_img--container"  data-aos="zoom-in" >
+                <img class="main_img--bike" src="img/Demo_Hero-Featured-scaled.jpg" alt="">
+            </div>
+            <div class="main_content_bikes" data-aos="fade-in"  >
+                <h1>Specialized</h1>
+                <h2>Demo 8</h2>
+                <div class="video_wrap">
+                    <iframe  width="360" height="185" src="https://www.youtube.com/embed/TnK-UNt1YPQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <button class="main_btn">
+                    <a href="https://www.specialized.com/ru/ru/s-works-demo-8/p/128925?color=239829-128925">Оглянути в магазині</a>
+                </button>
+            </div>
+</div>
+
+
+
+        <div class="main" id="YT"  >
+            <div class="main_container" >
+                <div class="main_img--container "  data-aos="zoom-in" >
+                    <img class="main_img--bike" src="img/1537272342_main.jpg" alt="">
+                </div>
+                <div class="main_content_bikes" data-aos="fade-in"  >
+                    <h1>YT Industries</h1>
+                    <h2>Tues 2021</h2>
+                    <div class="video_wrap">
+                        <iframe  width="360" height="185" src="https://www.youtube.com/embed/osm-VN-XcEU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <button class="main_btn">
+                        <a href="https://www.yt-industries.com/products/bikes/111/tues-base/preview">Оглянути в магазині</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+            <div class="main" id="SC"  >
+                <div class="main_container" >
+                    <div class="main_img--container"  data-aos="zoom-in" >
+                        <img class="main_img--bike" src="img/s600_MSA19_K3A4339.jpg" alt="">
+                    </div>
+                    <div class="main_content_bikes" data-aos="fade-in"  >
+                        <h1>Santa Cruz</h1>
+                        <h2>V10 2021</h2>
+                        <div class="video_wrap">
+                            <iframe  width="360" height="185" src="https://www.youtube.com/embed/52FOiJWTDf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <button class="main_btn">
+                            <a href="https://www.santacruzbicycles.com/en-US/bikes/v10">Оглянути в магазині</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
 
 <div class="main" id="about"  >
     <div class="main_container" >
@@ -160,8 +231,8 @@
 
 
 </body>
-<!--<script src="OverlayScrollbars.js"></script>-->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script><!--<script src="OverlayScrollbars.js"></script>-->
+
 <script>
     AOS.init({
         once: true,

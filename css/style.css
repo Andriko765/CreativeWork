@@ -79,16 +79,16 @@
     display: none;
     border-radius: 3px;
     position: absolute;
-    transform: translateY(70px);
     list-style: none;
     color: black;
     background: white;
     width: 150px;
     transition: all .5s ease;
+    transform: translate(-15px,-15px);
 
 }
 
-.sub_menu_item{
+.sub_menu_item {
 
     text-align: center;
     color: black;
@@ -96,16 +96,27 @@
 
 }
 
-.sub_menu:last-child{
+.sub_menu_item a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+}
+
+.sub_menu a{
     padding-bottom: 3px;
 }
 
 
-#skills-page:hover .sub_menu{
+#hover:hover .sub_menu{
     display: block;
-    height: 100px;
-    transition: all .5s ease;
+        transition: all .5s ease;
 }
+
+
+
+
+
+
 
 .navbar_links:hover{
     color: #9518fc;
@@ -339,6 +350,18 @@
 
 }
 
+.main_img--bike{
+    margin: 10px;
+    height: 400px;
+    width: 600px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: black;
+
+}
+
 .main_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -385,13 +408,36 @@
 }
 
 
-.main_content p{
-    margin: 1rem;
+
+.main_content_bikes h1{
     font-size: 2rem;
-    font-weight: 700;
+    background: #ff9966;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
+
+
+.main_content_bikes h2{
+    font-size: 4rem;
+
+    background: #ff8177;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9114ff, #da22ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f0eff, #da22ff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+
 
 
 @media screen and (max-width: 1100px) {
@@ -431,11 +477,24 @@
         font-size: 3rem;
 
     }
-    .main_content p{
-        font-size: 1.5rem;
-        margin-top: 1rem;
+
+
+    .main_content_bikes{
+        text-align: center;
+        margin-bottom: 4rem;
 
     }
+
+    .main_content_bikes h1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+
+    }
+    .main_content_bikes h2{
+        font-size: 3rem;
+
+    }
+
 
 
 }
@@ -453,6 +512,21 @@
 
 
     .main_content h2{
+        font-size: 2rem;
+    }
+
+    .main_img--bike{
+        width: 250px;
+        height: 250px;
+    }
+
+    .main_content_bikes h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+
+    .main_content_bikes h2{
         font-size: 2rem;
     }
     .main_content p{
